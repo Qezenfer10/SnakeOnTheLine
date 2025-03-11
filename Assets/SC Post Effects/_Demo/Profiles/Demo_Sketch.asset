@@ -1,0 +1,349 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7841285186589995928
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfc0ecd934e74246bcf9791abe617b0, type: 3}
+  m_Name: Pixelize
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  amount:
+    overrideState: 1
+    value: 1
+  resolution:
+    overrideState: 1
+    value: 67
+  resolutionPreset:
+    overrideState: 1
+    value: 1
+  preserveAspectRatio:
+    overrideState: 1
+    value: 0
+  centerPixel:
+    overrideState: 1
+    value: 1
+  shader: {fileID: 0}
+--- !u!114 &-5646899756707799262
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3797b844bf119c94c83b110e6cf4997a, type: 3}
+  m_Name: Sketch
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  strokeTex:
+    overrideState: 1
+    value: {fileID: 2800000, guid: f24e4c3dda89e824bac5f9f19949c372, type: 3}
+    defaultState: 1
+  projectionMode:
+    overrideState: 0
+    value: 0
+  blendMode:
+    overrideState: 0
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 1
+  brightness:
+    overrideState: 0
+    value: {x: 0, y: 1}
+  tiling:
+    overrideState: 0
+    value: 8
+  shader: {fileID: 0}
+--- !u!114 &-3193693424476685918
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ca37f13bb89c144a71832585b7a6ac, type: 3}
+  m_Name: EdgeDetection
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  debug:
+    overrideState: 1
+    value: 0
+  mode:
+    overrideState: 1
+    value: 0
+  invertFadeDistance:
+    overrideState: 0
+    value: 0
+  distanceFade:
+    overrideState: 0
+    value: 0
+  startFadeDistance:
+    overrideState: 0
+    value: 0
+  endFadeDistance:
+    overrideState: 0
+    value: 1000
+  sensitivityDepth:
+    overrideState: 1
+    value: 1
+  sensitivityNormals:
+    overrideState: 1
+    value: 1
+  lumThreshold:
+    overrideState: 0
+    value: 0.01
+  edgeColor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  edgeExp:
+    overrideState: 0
+    value: 1
+  edgeSize:
+    overrideState: 1
+    value: 2
+  edgeOpacity:
+    overrideState: 1
+    value: 0.411
+  sobelThin:
+    overrideState: 0
+    value: 0
+  shader: {fileID: 0}
+--- !u!114 &-2621395655083242631
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae979ba049e535429dde8ab92b28488, type: 3}
+  m_Name: Scanlines
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.76
+  amount:
+    overrideState: 0
+    value: 700
+  speed:
+    overrideState: 0
+    value: 0
+  shader: {fileID: 0}
+--- !u!114 &-2103775076675194504
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ce1611ace1a9a4a8284d45a924bdcd, type: 3}
+  m_Name: Dithering
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  lut:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 0.67
+  luminanceThreshold:
+    overrideState: 0
+    value: 0.5
+  tiling:
+    overrideState: 0
+    value: 1
+  shader: {fileID: 0}
+--- !u!114 &-987205965093421433
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e21a9f18817d444b2c00478e04a58e, type: 3}
+  m_Name: Posterize
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  hsvMode:
+    overrideState: 1
+    value: 1
+  levels:
+    overrideState: 0
+    value: 256
+  hue:
+    overrideState: 1
+    value: 256
+  saturation:
+    overrideState: 1
+    value: 256
+  value:
+    overrideState: 1
+    value: 256
+  shader: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Demo_Sketch
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -5646899756707799262}
+  - {fileID: -2621395655083242631}
+  - {fileID: 7172748648640378187}
+  - {fileID: -2103775076675194504}
+  - {fileID: -7841285186589995928}
+  - {fileID: -3193693424476685918}
+  - {fileID: -987205965093421433}
+--- !u!114 &114060017798833558
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3797b844bf119c94c83b110e6cf4997a, type: 3}
+  m_Name: Sketch
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  strokeTex:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  projectionMode:
+    overrideState: 0
+    value: 0
+  blendMode:
+    overrideState: 0
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 0.803
+  brightness:
+    overrideState: 0
+    value: {x: 0, y: 1}
+  tiling:
+    overrideState: 0
+    value: 8
+  shader: {fileID: 0}
+--- !u!114 &7172748648640378187
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aca6b5f0da8ca64cb69109b860c1891, type: 3}
+  m_Name: LightStreaks
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  quality:
+    overrideState: 0
+    value: 1
+  debug:
+    overrideState: 0
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 1
+  luminanceThreshold:
+    overrideState: 0
+    value: 1
+  direction:
+    overrideState: 0
+    value: -1
+  blur:
+    overrideState: 0
+    value: 1
+  iterations:
+    overrideState: 0
+    value: 2
+  downscaling:
+    overrideState: 0
+    value: 2
+  shader: {fileID: 0}
+--- !u!114 &8110166748197651228
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Sketch
+  m_EditorClassIdentifier: sc.posteffects.runtime:SCPE:Sketch
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  strokeTex:
+    overrideState: 1
+    value: {fileID: 2800000, guid: f24e4c3dda89e824bac5f9f19949c372, type: 3}
+    defaultState: 1
+  projectionMode:
+    overrideState: 1
+    value: 0
+  blendMode:
+    overrideState: 1
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 1
+  brightness:
+    overrideState: 1
+    value: {x: 0, y: 0.9463087}
+  tiling:
+    overrideState: 1
+    value: 13.1
